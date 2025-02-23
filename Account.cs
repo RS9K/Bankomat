@@ -17,8 +17,6 @@ namespace Hemuppgift_Bankomat
             AccountBalance = accountBalance;
         }
 
-        //public Account[] accounts = new Account[10];
-
         public void Withdraw(decimal amount)
         {
             AccountBalance -= amount;
@@ -43,15 +41,5 @@ namespace Hemuppgift_Bankomat
         {
             Console.WriteLine($"The balance in Account {AccountID} is: {AccountBalance}");
         }
-
-        //public void ListOfAccounts(Account[] accountList)
-        //{
-        //    Account.ConvertArrayToList(accountList);
-        //    Console.WriteLine("Here's a list of current accounts: ");
-        //    foreach (var account in accountList)
-        //    {
-        //        Console.WriteLine($"ID: {account.AccountID}, Balance: {account.AccountBalance}");
-        //    }
-        //}
     }
 }
